@@ -40,7 +40,4 @@ public class User {
 	
 	@Column(name="joinDate")
 	private Date joinDate;
-	
-	@Column(name="cnt")
-	int cnt;
 }
