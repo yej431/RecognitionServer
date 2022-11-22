@@ -4,16 +4,18 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
-import com.web.model.BlockUser;
 import com.web.model.User;
 
 public interface UserRepository extends JpaRepository<User,Integer> {	
+	@Modifying
+	@Query(value="insert into user(email, joinDate, password, role, userid) "
+			+ "values(?1, now(), ?2, ?3, ?4)", nativeQuery=true)
+	int userJoin(String email, String password, String role, String userid);
 	
 	@Query(value="select userid from user where userid=?1", nativeQuery=true)
 	String idCheck(String userid);

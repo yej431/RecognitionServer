@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.web.model.BlockUser;
-import com.web.model.RoleType;
 import com.web.model.User;
 import com.web.repository.ArticleRepository;
 import com.web.repository.BlockUserRepository;
@@ -36,9 +35,8 @@ public class UserService {
 			String rawPassword = user.getPassword();
 			String encPassword = encoder.encode(rawPassword);
 			user.setPassword(encPassword);
-			user.setRole(RoleType.USER);
-			userRepository.save(user);	
-			return 1;			
+			user.setRole("USER");
+			return userRepository.userJoin(user.getEmail(), user.getPassword(), user.getRole(), user.getUserid());
 		}else {
 			return 0;
 		}					
@@ -72,7 +70,7 @@ public class UserService {
 			String rawPassword = user.getPassword();
 			String encPassword = encoder.encode(rawPassword);
 			user.setPassword(encPassword);
-			user.setRole(RoleType.USER);
+			user.setRole("USER");
 			userRepository.save(user);
 			return 1;		
 		}else{

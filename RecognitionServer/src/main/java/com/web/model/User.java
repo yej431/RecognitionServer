@@ -36,8 +36,7 @@ public class User {
 	private String email;	
 	
 	@Column(name="role")
-	@Enumerated(EnumType.STRING)
-	private RoleType role;
+	private String role;
 	
 	@Column(name="joinDate")
 	private Date joinDate;
