@@ -26,7 +26,7 @@ public interface UserRepository extends JpaRepository<User,Integer> {
 	Optional<User> findByUserid(String userid);
 	
 	@Query(value="SELECT date_format(joinDate, '%m') as joinDate, count(*) cnt from user "
-			+ "group by joinDate order by joinDate asc", nativeQuery=true)
+			+ "group by date_format(joinDate, '%m') order by joinDate asc", nativeQuery=true)
 	List<Map<String, Object>> userMonthChart();
 	
 	@Modifying
