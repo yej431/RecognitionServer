@@ -71,8 +71,7 @@ public class UserService {
 			String encPassword = encoder.encode(rawPassword);
 			user.setPassword(encPassword);
 			user.setRole("USER");
-			userRepository.save(user);
-			return 1;		
+			return userRepository.userJoin(user.getEmail(), user.getPassword(), user.getRole(), user.getUserid());	
 		}else{
 			return 0;
 		}					
