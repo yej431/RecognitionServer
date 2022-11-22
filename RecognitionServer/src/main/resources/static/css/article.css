@@ -1,0 +1,115 @@
+#article {
+	width: 100%;
+	padding: 24px 20px 20px 20px;
+}
+#article .article-title {
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+#article .article-sub {
+	display: flex;
+	grid-gap: 6px;
+}
+#article .article-sub li,
+#article .article-sub li a {
+	font-size: 14px;
+}
+#article .article-sub a {
+	color: var(--blue);
+}
+#article .article-sub li a.active,
+#article .article-sub li.divider {
+	color: var(--dark-grey);
+	cursor: pointer;
+}
+#article .article-list-total {
+	color: var(--dark-grey); margin-top:10px;
+	font-size:14px;
+}
+#article table{
+	width: 100%; border-collapse: collapse;
+}
+#article td,th{
+	border-bottom: 1px solid lightgrey; text-align: center;
+	padding: 10px 0; font-size: 14px;
+}
+#article .table-title{
+	text-align: left; 
+	overflow:hidden;
+	text-overflow: ellipsis;
+}
+#article .table-title:hover{
+	text-decoration:underline; color:var(--dark);
+}
+#article th{
+	background-color: gray; color: #fff;
+}
+#article .paging{
+	margin-top:10px; text-align:center;
+}
+#article .paging ul li{
+	display:inline-block; padding:20px;
+}
+#article .abutton {
+	margin-top:20px; float:right;
+}
+#article .abutton a, #article .abutton button{
+	padding:7px 20px; border:0; background:var(--blue); font-size:13px; border-radius: 5px;
+	color:white; cursor: pointer;
+}
+#article .paging{
+	margin-top:20px; 
+}
+#article .paging ul li{
+	font-size:14px; display:inline-block; padding:10px;
+}
+
+/*articleListWrite*/
+#article .write-form{
+	margin-top:20px; 
+}
+#article .write-form-title input{
+	width:100%; padding:10px; border: 1px solid #ccc; font-size: 14px;
+}
+#article .write-form .file{
+	margin-top:10px; font-size: 14px;
+}
+#article .write-form-textarea{
+	margin-top:10px; font-size: 14px;
+}
+#article .write-form-textarea textarea{
+	width:100%; padding:10px; 
+}
+#article .submit{
+	margin-top:10px; float:right;
+}
+#article .submit input{
+	padding:7px 20px; border:0; background:var(--blue); font-size:13px; border-radius: 5px;
+	color:white;
+}
+#article .submit span{
+	padding-right:10px; color:var(--red); font-size:14px;
+}
+.clickUser:hover {
+	cursor:pointer; position:relative;
+}
+.selectUser {
+	position:absolute; margin-top:2px; background-color:white; padding:5px;
+	font-size:11px; display: none; text-align:center;
+}
+.selectUser:hover {
+	cursor:pointer; text-decoration:underline;
+}
+
+@media screen and (max-width: 768px) {
+	#content {
+		position: relative;
+		width: calc(100% - 60px);
+		transition: all .3s ease;
+	}
+	nav .nav-link,
+	nav .divider {
+		display: none;
+	}
+}

@@ -1,0 +1,91 @@
+#flower {
+	width: 100%;
+	padding: 24px 20px 20px 20px;
+}
+#flower .flower-title {
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+#flower .flower-sub {
+	display: flex;
+	grid-gap: 6px;
+}
+#flower .flower-sub li,
+#flower .flower-sub li a {
+	font-size: 14px;
+}
+#flower .flower-sub a {
+	color: var(--blue);
+}
+#flower .flower-sub li a.active,
+#flower .flower-sub li.divider {
+	color: var(--dark-grey);
+	cursor: pointer;
+}
+#flower .flower-list-total {
+	color: var(--dark-grey); margin-top:10px;
+	font-size:14px;
+}
+#flower table{
+	width: 100%; border-collapse: collapse;
+}
+#flower td,th{
+	border-bottom: 1px solid lightgrey; text-align: center;
+	padding: 10px 0; font-size: 14px;
+}
+#flower .table-title{
+	text-align: left;
+}
+#flower .table-title:hover{
+	text-decoration:underline; color:var(--dark);
+}
+#flower th{
+	background-color: gray; color: #fff;
+}
+#flower .paging{
+	margin-top:10px; text-align:center;
+}
+#flower .paging ul li{
+	display:inline-block; padding:20px;
+}
+#flower .abutton {
+	margin-top:20px; text-align:right;
+}
+#flower .abutton a, #flower .abutton button{
+	padding:7px 20px; border:0; background:var(--blue); font-size:13px; border-radius: 5px;
+	color:white; cursor: pointer;
+}
+#flower .paging{
+	margin-top:20px; 
+}
+#flower .paging ul li{
+	font-size:14px; display:inline-block; padding:10px;
+}
+
+/*FlowerListWrite*/
+#flower .write-form{
+	margin-top:20px; 
+}
+#flower .write-form-title input{
+	width:100%; padding:10px; border: 1px solid #ccc; font-size: 14px;
+}
+#flower .write-form .file{
+	margin-top:10px; font-size: 14px;
+}
+#flower .write-form-textarea{
+	margin-top:10px; font-size: 14px;
+}
+#flower .write-form-textarea textarea{
+	width:100%; padding:10px; 
+}
+#flower .submit{
+	margin-top:10px; float:right;
+}
+#flower .submit input{
+	padding:7px 20px; border:0; background:var(--blue); font-size:13px; border-radius: 5px;
+	color:white;
+}
+#flower .submit span{
+	padding-right:10px; color:var(--red); font-size:14px;
+}

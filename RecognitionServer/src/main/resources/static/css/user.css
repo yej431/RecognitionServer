@@ -1,0 +1,51 @@
+#userinfo, #blockUser {
+	width: 100%;
+	padding: 24px 20px 20px 20px;
+}
+#userinfo .userinfo-title, #blockUser .blockUser-title{
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+#userinfo .userinfo-sub, #blockUser .blockUser-sub {
+	display: flex;
+	grid-gap: 6px;
+}
+#userinfo .userinfo-sub li,
+#userinfo .userinfo-sub li a,
+#blockUser .blockUser-sub li,
+#blockUser .blockUser-sub li a {
+	font-size: 14px;
+}
+#userinfo .userinfo-sub a,
+#blockUser .blockUser-sub a {
+	color: var(--blue);
+}
+#userinfo .userinfo-sub li a.active,
+#userinfo .userinfo-sub li.divider,
+#blockUser .blockUser-sub li a.active,
+#blockUser .blockUser-sub li.divider {
+	color: var(--dark-grey);
+	cursor: pointer;
+}
+#userinfo table, #blockUser table{
+	width: 100%; background-color: white;
+	margin-top: 10px;border-collapse: collapse;
+}
+#userinfo table td, #blockUser table td{
+	border: 1px solid lightgrey;
+	padding: 10px; font-size: 14px;
+}
+#userinfo .abutton, #blockUser .abutton {
+	margin-top:20px; text-align:right;
+}
+#userinfo .abutton a, #userinfo .abutton button, #blockUser .abutton a, #blockUser .abutton button {
+	padding:7px 15px; border:0; background:var(--blue); font-size:13px; border-radius: 5px;
+	color:white; cursor: pointer;
+}
+#blockUser textarea{
+	width: 100%; border: 1px solid lightgray
+}
+#blockUser textarea:focus {
+	outline:none;
+}
