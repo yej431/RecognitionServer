@@ -12,16 +12,16 @@ Java 기반의 서버 애플리케이션 프로젝트입니다.
   
 ---
 
-##  기술 스택 (예상)
+##  기술 스택 
 - 프레임워크: Spring Boot / Spring MVC
 - 빌드: Gradle 또는 Maven
 - 언어: Java 8 이상
 - 인식 라이브러리: OpenCV, Tesseract, Tensorflow Java 등
-- 테스트: JUnit, Mockito 등
+- 테스트: JUnit
 
 ---
 
-##  요구환경 & 실행 방법 (예시)
+##  요구환경 & 실행 방법
 1. 리포지토리 복제:
    ```bash
    git clone https://github.com/yej431/RecognitionServer.git
